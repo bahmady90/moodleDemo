@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+dialog::backdrop {
+     background-color: rgba(31, 29, 29, 0.527); 
+  }
+
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  width: fit-content;
+  max-width: 70%;
+  height: fit-content;
+  min-height: 70px;
+  min-width: 300px;
+  background: #e9eff8;
+  border-radius: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-right-color: #e9eff8;
+    border-left: 0;
+    margin-top: -13px;
+    margin-left: -13px;
+  }
+}
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+      @apply appearance-none;
+  }
+
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+}
+
