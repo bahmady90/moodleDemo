@@ -1,10 +1,6 @@
 import { createContext, Dispatch, ReactNode, useContext, useReducer } from "react";
 
-/* {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ]
-} */
+
 
 
 /* export const BASE_URL = "http://localhost:3000"; */
